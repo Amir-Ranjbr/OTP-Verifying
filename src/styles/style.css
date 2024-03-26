@@ -36,6 +36,13 @@ body {
   border-radius: 4px;
   font-family: "Poppins";
 }
+
+.otp-input:invalid {
+  animation: justshake 0.3s forwards;
+  color: #ed0505;
+  background: #fabfc9;
+}
+
 .failed {
   color: #ed0505;
   margin-bottom: 1rem;
@@ -104,7 +111,21 @@ body {
   font-size: 10rem;
   color: #ff4500;
 }
-
+/* KeyFrame */
+@keyframes justshake {
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
 /* Media queries */
 @media only screen and (max-width: 900px) {
   html {
